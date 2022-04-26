@@ -1,13 +1,5 @@
 server:
   port : 8081
-spring:
-  application:
-    name: movie-service
-  config:
-    import:
-      - optional:configserver:http://localhost:8888/
-  profiles:
-    active: dev
 
 eureka:
   client:
@@ -19,13 +11,9 @@ spring:
     hibernate:
       ddl-auto: create-drop
     defer-datasource-initialization: true
-    # properties:
-    #   hibernate:
-    #     dialect: org.hibernate.dialect.MySQL5Dialect
-    # show-sql: false
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=1;
     username: sa
     password: sa
 
