@@ -13,7 +13,8 @@ info:
   env:
     enabled: true
 
-zipkin:
+spring:
+  zipkin:
     base-url: http://localhost:9411/
     enabled: true
 
