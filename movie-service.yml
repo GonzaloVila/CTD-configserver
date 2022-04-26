@@ -1,3 +1,5 @@
+server:
+  port : 8081
 spring:
   application:
     name: movie-service
@@ -6,8 +8,6 @@ spring:
       - optional:configserver:http://localhost:8888/
   profiles:
     active: dev
-server:
-  port : 8081
 
 eureka:
   client:
