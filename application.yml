@@ -32,17 +32,10 @@ queue:
   catalog:
     name: catalogQueue
     
-  management:
-    endpoints:
-      web:
-        exposure:
-          include=circuitbreakers,circuitbreakerevents,health,info,ratelimiters,metrics
     health:
       circuitbreakers:
         enabled: true
-    endpoint:
-      health:
-        show-details: always
+
 
   resilience4j:
     circuitbreaker:
